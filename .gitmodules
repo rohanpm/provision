@@ -1,0 +1,18 @@
+[submodule "roles/jdauphant.dropbox"]
+	path = roles/jdauphant.dropbox
+	url = https://github.com/jdauphant/ansible-role-dropbox.git
+[submodule "roles/wm"]
+	path = roles/wm
+	url = https://github.com/rohanpm/ansible-roles-wm.git
+[submodule "roles/base-packages"]
+	path = roles/base-packages
+	url = https://github.com/rohanpm/ansible-roles-base-packages.git
+[submodule "roles/dev"]
+	path = roles/dev
+	url = https://github.com/rohanpm/ansible-roles-dev.git
+[submodule "roles/dropbox-daemon"]
+	path = roles/dropbox-daemon
+	url = https://github.com/rohanpm/ansible-roles-dropbox-daemon.git
+[submodule "roles/user"]
+	path = roles/user
+	url = https://github.com/rohanpm/ansible-roles-user.git

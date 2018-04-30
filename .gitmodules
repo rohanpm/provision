@@ -16,3 +16,6 @@
 [submodule "roles/user"]
 	path = roles/user
 	url = https://github.com/rohanpm/ansible-roles-user.git
+[submodule "roles/gantsign.visual-studio-code"]
+	path = roles/gantsign.visual-studio-code
+	url = https://github.com/gantsign/ansible-role-visual-studio-code.git

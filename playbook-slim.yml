@@ -7,7 +7,9 @@
   - role: jdauphant.dropbox
     become: yes
   - dropbox-daemon
-  - wm
+  - role: wm
+    i3_font: DejaVu Sans Mono 13
+    terminal_font_size: 13
   - dev
   - role: gantsign.visual-studio-code
     users:

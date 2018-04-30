@@ -1,0 +1,14 @@
+---
+- name: Apply roles
+  hosts: workstation
+  roles:
+  - base-packages
+  - user
+  - role: jdauphant.dropbox
+    become: yes
+  - dropbox-daemon
+  - wm
+  - dev
+  vars:
+    user_uid: 1000
+    git_email: rohan@mcgovern.id.au

@@ -8,8 +8,8 @@
     become: yes
   - dropbox-daemon
   - role: wm
-    i3_font: DejaVu Sans Mono 13
-    terminal_font_size: 13
+    i3_font: DejaVu Sans Mono 12
+    terminal_font_size: 14
   - dev
   - role: gantsign.visual-studio-code
     users:

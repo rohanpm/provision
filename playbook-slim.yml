@@ -32,4 +32,4 @@
     user_uid: 1000
     git_email: rohan@mcgovern.id.au
     mail_user: rohan@mcgovern.id.au
-    mail_interval: 3h
+    mail_check_schedule: "*-*-* 0/3:00:00"

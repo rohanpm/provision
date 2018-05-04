@@ -1,2 +1,40 @@
-#!/bin/sh
-exec ansible-playbook --ask-become-pass playbook-$(hostname).yml "$@"
+#!/usr/bin/env python
+from __future__ import print_function
+import subprocess
+import socket
+import os
+import sys
+
+
+def playbook_name():
+    return ''.join(['playbook-', socket.gethostname(), '.yml'])
+
+
+def secrets_name():
+    return ''.join(['secrets-', socket.gethostname(), '.yml'])
+
+
+def ansible_command():
+    out = ['ansible-playbook',
+           '--ask-become-pass',
+           playbook_name()]
+
+    secrets = secrets_name()
+    if os.path.exists(secrets):
+        out.extend([
+            '-e',
+            '@%s' % secrets
+        ])
+
+    return out
+
+
+def run(args):
+    command = ansible_command()
+    command.extend(args)
+    print('+', ' '.join(command))
+    os.execvp(command[0], command)
+
+
+if __name__ == '__main__':
+    run(sys.argv[1:])

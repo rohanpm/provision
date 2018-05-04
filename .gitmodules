@@ -22,3 +22,6 @@
 [submodule "roles/mail"]
 	path = roles/mail
 	url = https://github.com/rohanpm/ansible-roles-mail.git
+[submodule "roles/rclone-gdrive"]
+	path = roles/rclone-gdrive
+	url = https://github.com/rohanpm/ansible-roles-rclone-gdrive.git

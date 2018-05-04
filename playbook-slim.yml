@@ -26,6 +26,10 @@
         "editor.renderWhitespace": true
       }
     tags: visual-studio-code
+  - role: mail
+    tags: mail
   vars:
     user_uid: 1000
     git_email: rohan@mcgovern.id.au
+    mail_user: rohan@mcgovern.id.au
+    mail_interval: 3h

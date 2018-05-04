@@ -2,15 +2,21 @@
 - name: Apply roles
   hosts: workstation
   roles:
-  - base-packages
-  - user
+  - role: base-packages
+    tags: base-packages
+  - role: user
+    tags: user
   - role: jdauphant.dropbox
     become: yes
-  - dropbox-daemon
+    tags: dropbox
+  - role: dropbox-daemon
+    tags: dropbox-daemon
   - role: wm
     i3_font: DejaVu Sans Mono 12
     terminal_font_size: 14
-  - dev
+    tags: wm
+  - role: dev
+    tags: dev
   - role: gantsign.visual-studio-code
     users:
     - username: "{{ lookup('env', 'USER') }}"
@@ -19,6 +25,7 @@
       visual_studio_code_settings: {
         "editor.renderWhitespace": true
       }
+    tags: visual-studio-code
   vars:
     user_uid: 1000
     git_email: rohan@mcgovern.id.au

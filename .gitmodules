@@ -25,3 +25,6 @@
 [submodule "roles/rclone-gdrive"]
 	path = roles/rclone-gdrive
 	url = https://github.com/rohanpm/ansible-roles-rclone-gdrive.git
+[submodule "library/emacs"]
+	path = library/emacs
+	url = https://github.com/rohanpm/ansible-modules-emacs.git

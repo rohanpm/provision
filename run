@@ -18,7 +18,6 @@ def secrets_name():
 def ansible_command():
     out = ['ansible-playbook',
            '--ask-become-pass',
-           '-M', ':'.join(glob.glob('library/*')),
            playbook_name()]
 
     secrets = secrets_name()

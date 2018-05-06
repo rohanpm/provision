@@ -28,3 +28,6 @@
 [submodule "library/emacs"]
 	path = library/emacs
 	url = https://github.com/rohanpm/ansible-modules-emacs.git
+[submodule "roles/laptop"]
+	path = roles/laptop
+	url = https://github.com/rohanpm/ansible-roles-laptop.git

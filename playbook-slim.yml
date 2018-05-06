@@ -6,6 +6,8 @@
     tags: base-packages
   - role: user
     tags: user
+  - role: laptop
+    tags: laptop
   - role: jdauphant.dropbox
     become: yes
     tags: dropbox
@@ -33,3 +35,9 @@
     git_email: rohan@mcgovern.id.au
     mail_user: rohan@mcgovern.id.au
     mail_check_schedule: "*-*-* 0/3:00:00"
+
+    # This machine has broken ACPI so several keys
+    # need to be ignored
+    laptop_suspend_key: ignore
+    laptop_hibernate_key: ignore
+    laptop_lid_switch: ignore

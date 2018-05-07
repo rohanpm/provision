@@ -13,6 +13,8 @@
     tags: dropbox
   - role: dropbox-daemon
     tags: dropbox-daemon
+  - role: browsers
+    tags: browsers
   - role: wm
     i3_font: DejaVu Sans Mono 12
     terminal_font_size: 14

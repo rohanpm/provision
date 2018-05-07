@@ -28,3 +28,6 @@
 [submodule "roles/laptop"]
 	path = roles/laptop
 	url = https://github.com/rohanpm/ansible-roles-laptop.git
+[submodule "roles/browsers"]
+	path = roles/browsers
+	url = https://github.com/rohanpm/ansible-roles-browsers.git
